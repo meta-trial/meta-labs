@@ -10,7 +10,6 @@ class TestReportables(TestCase):
         except ParserError:
             self.fail("ParserError unexpectedly raised.")
         self.assertIsNotNone(site_reportables.get("meta"))
-        filename1, filename2 = site_reportables.to_csv(
-            "meta", path=mkdtemp())
+        filename1, filename2 = site_reportables.to_csv("meta", path=mkdtemp())
         print(filename1)
         print(filename2)
