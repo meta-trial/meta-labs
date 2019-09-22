@@ -1,7 +1,7 @@
 |pypi| |travis| |coverage|
 
 meta-labs
----------------
+---------
 
 .. |pypi| image:: https://img.shields.io/pypi/v/meta-labs.svg
     :target: https://pypi.python.org/pypi/meta-labs

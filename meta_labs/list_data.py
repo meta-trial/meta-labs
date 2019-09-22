@@ -4,17 +4,17 @@ from edc_list_data import PreloadData
 model_data = {
     "edc_lab.consignee": [
         {
-            "name": "LSTM",
-            "contact_name": "-",
-            "address": "-",
+            "name": "The META Trial",
+            "contact_name": "Sokoine Kivuyo",
+            "address": "NIMR Tanzania",
             "postal_code": "-",
-            "city": "-",
-            "state": "-",
-            "country": "-",
-            "telephone": "-",
-            "mobile": "-",
-            "fax": "-",
-            "email": "",
+            "city": "Dar es Salaam",
+            "state": None,
+            "country": "Tanzania",
+            "telephone": "+255763244779",
+            "mobile": "+255763244779",
+            "fax": None,
+            "email": "sokoinele@yahoo.co.uk",
         }
     ]
 }
