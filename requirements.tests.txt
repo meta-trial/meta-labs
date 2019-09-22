@@ -1,2 +1,10 @@
 faker
 model-mommy
+edc-adverse-event
+edc-data-manager
+edc-randomization
+meta-ae
+meta-subject
+meta-lists
+meta-sites
+meta-visit-schedule
