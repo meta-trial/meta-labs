@@ -1,3 +1,4 @@
+from django.conf import settings
 from edc_lab import LabProfile
 
 from .panels import (
@@ -12,7 +13,7 @@ from .panels import (
 
 
 subject_lab_profile = LabProfile(
-    name="subject_lab_profile", requisition_model="meta_subject.subjectrequisition"
+    name="subject_lab_profile", requisition_model=settings.SUBJECT_REQUISITION_MODEL
 )
 
 subject_lab_profile.add_panel(fbc_panel)
