@@ -4,7 +4,6 @@ from .processing_profiles import (
     fbc_processing,
     hba1c_processing,
     chemistry_processing,
-    chemistry_alt_processing,
     blood_glucose_processing,
     poc_processing,
 )
@@ -43,14 +42,7 @@ blood_glucose_poc_panel = RequisitionPanel(
 
 chemistry_panel = RequisitionPanel(
     name="chemistry",
-    verbose_name="Creat, Urea, Elec",
+    verbose_name="Chemistry: Creat, Urea, Elec, ALT, etc",
     abbreviation="CHEM",
     processing_profile=chemistry_processing,
-)
-
-chemistry_alt_panel = RequisitionPanel(
-    name="chemistry_alt",
-    verbose_name="Creat, Urea, Elec, ALT",
-    abbreviation="CHEM-ALT",
-    processing_profile=chemistry_alt_processing,
 )
