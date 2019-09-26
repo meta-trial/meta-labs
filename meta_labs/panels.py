@@ -11,7 +11,7 @@ from .processing_profiles import (
 
 hba1c_panel = RequisitionPanel(
     name="hba1c",
-    verbose_name="Hemoglogin A1c (Venous)",
+    verbose_name="HbA1c (Venous)",
     processing_profile=hba1c_processing,
     abbreviation="HBA1C",
 )
@@ -19,7 +19,7 @@ hba1c_panel = RequisitionPanel(
 
 hba1c_poc_panel = RequisitionPanel(
     name="hba1c_poc",
-    verbose_name="Hemoglogin A1c (POC)",
+    verbose_name="HbA1c (POC)",
     abbreviation="HBA1C_POC",
     processing_profile=poc_processing,
 )

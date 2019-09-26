@@ -3,7 +3,7 @@ from edc_reportable import site_reportables, parse as p, adult_age_options
 from edc_reportable import MILLIGRAMS_PER_DECILITER, MILLIMOLES_PER_LITER
 from edc_reportable import MICROMOLES_PER_LITER, IU_LITER
 from edc_reportable import GRAMS_PER_DECILITER, TEN_X_9_PER_LITER
-from edc_reportable.grading_data.daids_july_2017 import hematology, chemistries
+from edc_reportable.grading_data.daids_july_2017 import hematology, chemistries, dummies
 from edc_reportable.units import CELLS_PER_MILLIMETER_CUBED, PERCENT, GRAMS_PER_LITER
 
 
@@ -148,7 +148,27 @@ normal_data = {
             units=MILLIMOLES_PER_LITER,
             gender=[MALE, FEMALE],
             **adult_age_options,
-        )
+        ),
+        p(
+            "7.2<=x",
+            units=MILLIGRAMS_PER_DECILITER,
+            gender=[MALE, FEMALE],
+            **adult_age_options,
+        ),
+    ],
+    "rbc": [
+        p(
+            "3.5<=x<=5.5",
+            units=TEN_X_9_PER_LITER,
+            gender=[MALE, FEMALE],
+            **adult_age_options,
+        ),
+        p(
+            "3500<=x<=5500",
+            units=CELLS_PER_MILLIMETER_CUBED,
+            gender=[MALE, FEMALE],
+            **adult_age_options,
+        ),
     ],
     "wbc": [
         p("2.49<x", units=TEN_X_9_PER_LITER, gender=[MALE, FEMALE], **adult_age_options)
@@ -156,6 +176,7 @@ normal_data = {
 }
 
 grading_data = {}
+grading_data.update(**dummies)
 grading_data.update(**chemistries)
 grading_data.update(**hematology)
 
