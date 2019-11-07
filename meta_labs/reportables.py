@@ -27,7 +27,7 @@ normal_data = {
     "amylase": [
         p("40<=x<=140", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)
     ],
-    "ast": [p("10<=x<=40", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
+    "ast": [p("5<=x<=34", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
     "egfr": [],
     "creatinine": [
         p(
@@ -62,16 +62,16 @@ normal_data = {
     "hba1c": [
         p("4.4<=x<=6.6", units=PERCENT, gender=[MALE, FEMALE], **adult_age_options)
     ],
-    "ggt": [p("0<=x<=30", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
+    "ggt": [p("9<=x<=36", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
     "haemoglobin": [
         p(
-            "13.5<=x<=17.5",
+            "13.0<=x<=17.0",
             units=GRAMS_PER_DECILITER,
             gender=[MALE],
             **adult_age_options,
         ),
         p(
-            "12.0<=x<=15.5",
+            "12.0<=x<=15.0",
             units=GRAMS_PER_DECILITER,
             gender=[FEMALE],
             **adult_age_options,
