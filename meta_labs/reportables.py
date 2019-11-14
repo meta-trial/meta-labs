@@ -6,7 +6,6 @@ from edc_reportable import GRAMS_PER_DECILITER, TEN_X_9_PER_LITER
 from edc_reportable.grading_data.daids_july_2017 import hematology, chemistries, dummies
 from edc_reportable.units import CELLS_PER_MILLIMETER_CUBED, PERCENT, GRAMS_PER_LITER
 
-
 normal_data = {
     "albumin": [
         p(
@@ -22,7 +21,9 @@ normal_data = {
             **adult_age_options,
         ),
     ],
-    "alp": [p("10<=x<=40", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
+    "alp": [
+        p("40<=x<=150", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)
+    ],
     "alt": [p("10<=x<=40", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
     "amylase": [
         p("40<=x<=140", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)
@@ -62,7 +63,10 @@ normal_data = {
     "hba1c": [
         p("4.4<=x<=6.6", units=PERCENT, gender=[MALE, FEMALE], **adult_age_options)
     ],
-    "ggt": [p("9<=x<=36", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
+    "ggt": [
+        p("12<=x<=64", units=IU_LITER, gender=[MALE], **adult_age_options),
+        p("9<=x<=36", units=IU_LITER, gender=[FEMALE], **adult_age_options),
+    ],
     "haemoglobin": [
         p(
             "13.0<=x<=17.0",
