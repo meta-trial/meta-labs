@@ -22,13 +22,11 @@ normal_data = {
         ),
     ],
     "alp": [
-        p("40<=x<=150", units=IU_LITER, gender=[
-          MALE, FEMALE], **adult_age_options)
+        p("40<=x<=150", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)
     ],
     "alt": [p("0<=x<=55", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
     "amylase": [
-        p("25<=x<=125", units=IU_LITER, gender=[
-          MALE, FEMALE], **adult_age_options)
+        p("25<=x<=125", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)
     ],
     "ast": [p("5<=x<=34", units=IU_LITER, gender=[MALE, FEMALE], **adult_age_options)],
     "egfr": [],
@@ -63,8 +61,7 @@ normal_data = {
         ),
     ],
     "hba1c": [
-        p("4.4<=x<=6.6", units=PERCENT, gender=[
-          MALE, FEMALE], **adult_age_options)
+        p("4.4<=x<=6.6", units=PERCENT, gender=[MALE, FEMALE], **adult_age_options)
     ],
     "ggt": [
         p("12<=x<=64", units=IU_LITER, gender=[MALE], **adult_age_options),
@@ -86,8 +83,7 @@ normal_data = {
     ],
     # hematocrit
     "hct": [
-        p("37.0<=x<=54.0", units=PERCENT, gender=[
-          MALE, FEMALE], **adult_age_options)
+        p("37.0<=x<=54.0", units=PERCENT, gender=[MALE, FEMALE], **adult_age_options)
     ],
     "magnesium": [
         p(
@@ -157,12 +153,12 @@ normal_data = {
             gender=[MALE, FEMALE],
             **adult_age_options,
         ),
-        #         p(
-        #             "7.2<=x",
-        #             units=MILLIGRAMS_PER_DECILITER,
-        #             gender=[MALE, FEMALE],
-        #             **adult_age_options,
-        #         ),
+        p(
+            "7.2<=x",
+            units=MILLIGRAMS_PER_DECILITER,
+            gender=[MALE, FEMALE],
+            **adult_age_options,
+        ),
     ],
     "rbc": [
         p(
@@ -179,8 +175,7 @@ normal_data = {
         ),
     ],
     "wbc": [
-        p("2.49<x", units=TEN_X_9_PER_LITER, gender=[
-          MALE, FEMALE], **adult_age_options)
+        p("2.49<x", units=TEN_X_9_PER_LITER, gender=[MALE, FEMALE], **adult_age_options)
     ],
 }
 
