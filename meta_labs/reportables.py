@@ -63,6 +63,14 @@ normal_data = {
     "hba1c": [
         p("4.4<=x<=6.6", units=PERCENT, gender=[MALE, FEMALE], **adult_age_options)
     ],
+    "hdl": [
+        p(
+            "1.04<=x<=1.55",
+            units=MILLIMOLES_PER_LITER,
+            gender=[MALE, FEMALE],
+            **adult_age_options,
+        ),
+    ],
     "ggt": [
         p("12<=x<=64", units=IU_LITER, gender=[MALE], **adult_age_options),
         p("9<=x<=36", units=IU_LITER, gender=[FEMALE], **adult_age_options),
@@ -84,6 +92,14 @@ normal_data = {
     # hematocrit
     "hct": [
         p("37.0<=x<=54.0", units=PERCENT, gender=[MALE, FEMALE], **adult_age_options)
+    ],
+    "ldl": [
+        p(
+            "0.00<=x<=3.34",
+            units=MILLIMOLES_PER_LITER,
+            gender=[MALE, FEMALE],
+            **adult_age_options,
+        ),
     ],
     "magnesium": [
         p(
@@ -136,6 +152,14 @@ normal_data = {
             gender=[MALE, FEMALE],
             **adult_age_options,
         )
+    ],
+    "trig": [
+        p(
+            "0.00<=x<=1.69",
+            units=MILLIMOLES_PER_LITER,
+            gender=[MALE, FEMALE],
+            **adult_age_options,
+        ),
     ],
     # BUN
     "urea": [
