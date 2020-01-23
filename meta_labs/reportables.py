@@ -15,7 +15,7 @@ normal_data = {
             **adult_age_options,
         ),
         p(
-            "35<=x<=50",
+            "35.0<=x<=50.0",
             units=GRAMS_PER_LITER,
             gender=[MALE, FEMALE],
             **adult_age_options,
